@@ -1,0 +1,75 @@
+{
+  "globalWebhookUrl": "https://tenalpokukok.beget.app/webhook/telegram-monitor",
+  "channels": [
+    {
+      "id": "1337595829",
+      "name": "Алфей клуб",
+      "watchMessages": true,
+      "watchComments": true,
+      "watchReactions": false,
+      "topicIds": [],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T10:30:00.000Z"
+    },
+    {
+      "id": "123456789",
+      "name": "Новостной канал",
+      "watchMessages": true,
+      "watchComments": false,
+      "watchReactions": false,
+      "topicIds": [],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T11:00:00.000Z"
+    },
+    {
+      "id": "987654321",
+      "name": "Блог с обсуждениями - группа комментариев",
+      "watchMessages": true,
+      "watchComments": true,
+      "watchReactions": true,
+      "topicIds": [],
+      "linkedTo": "123456789",
+      "addedAt": "2025-10-20T12:00:00.000Z"
+    },
+    {
+      "id": "555555555",
+      "name": "Супергруппа - ВСЕ топики (для поиска)",
+      "watchMessages": true,
+      "watchComments": false,
+      "watchReactions": false,
+      "topicIds": ["all"],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T13:00:00.000Z"
+    },
+    {
+      "id": "666666666",
+      "name": "Супергруппа - только General",
+      "watchMessages": true,
+      "watchComments": false,
+      "watchReactions": false,
+      "topicIds": ["general"],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T14:00:00.000Z"
+    },
+    {
+      "id": "777777777",
+      "name": "Супергруппа - только топики 123 и 456",
+      "watchMessages": true,
+      "watchComments": false,
+      "watchReactions": false,
+      "topicIds": [123, 456],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T15:00:00.000Z"
+    },
+    {
+      "id": "888888888",
+      "name": "Супергруппа - General + топики 789 и 1011",
+      "watchMessages": true,
+      "watchComments": false,
+      "watchReactions": false,
+      "topicIds": ["general", 789, 1011],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T16:00:00.000Z"
+    }
+  ]
+}

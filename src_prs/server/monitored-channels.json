@@ -1,0 +1,45 @@
+{
+  "globalWebhookUrl": "https://tenalpokukok.beget.app/webhook/webhook/all_channels",
+  "channels": [
+    {
+      "id": "1467139881",
+      "name": "ХиВ",
+      "watchMessages": true,
+      "watchComments": false,
+      "watchReactions": false,
+      "topicIds": [],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T10:30:00.000Z"
+    },
+    {
+      "id": "2285849521",
+      "name": "Тест_Канал_Арт1",
+      "watchMessages": true,
+      "watchComments": false,
+      "watchReactions": false,
+      "topicIds": [],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T10:30:00.000Z"
+    },
+    {
+      "id": "3159003580",
+      "name": "Тест_Канал_Арт1 Chat (комментарии)",
+      "watchMessages": true,
+      "watchComments": true,
+      "watchReactions": false,
+      "topicIds": [],
+      "linkedTo": "2285849521",
+      "addedAt": "2025-10-20T16:55:00.000Z"
+    },
+    {
+      "id": "2328816589",
+      "name": "Тест_ГРУППА_АРТ1 (супергруппа)",
+      "watchMessages": true,
+      "watchComments": false,
+      "watchReactions": false,
+      "topicIds": ["all"],
+      "linkedTo": null,
+      "addedAt": "2025-10-20T16:55:00.000Z"
+    }
+  ]
+}

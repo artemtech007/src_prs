@@ -1,0 +1,34 @@
+services:
+  telegram-parser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+      - PORT=3005
+      - API_ID=${API_ID}
+      - API_HASH=${API_HASH}
+      - SESSION=${SESSION}
+      - WEBHOOK_GLOBAL_URL=https://p.botstroicom.site/webhook
+    volumes:
+      - telegram-parser-data:/app/data
+      - telegram-parser-logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "healthcheck.js"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    container_name: telegram-parser
+    networks:
+      - coolify
+
+volumes:
+  telegram-parser-data:
+    name: telegram-parser-data
+  telegram-parser-logs:
+    name: telegram-parser-logs
+
+networks:
+  coolify:
+    external: true

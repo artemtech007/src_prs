@@ -1,0 +1,42 @@
+{
+  "name": "telegram-parser-clean",
+  "version": "2.0.0",
+  "description": "Telegram Parser with Rate Limiting and Webhook Support",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "pm2": "pm2 start server.js --name telegram-parser",
+    "test": "echo \"Tests not implemented\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "parser",
+    "api",
+    "rate-limiting",
+    "webhook",
+    "n8n"
+  ],
+  "author": "Telegram Parser Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "telegram": "^2.26.22",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "config": {
+    "rateLimit": 20,
+    "queueSize": 1000,
+    "timeout": 30000
+  }
+}
